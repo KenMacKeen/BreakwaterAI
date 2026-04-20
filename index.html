@@ -67,10 +67,30 @@
     .nav-logo {
       font-family: var(--font-display);
       font-weight: 800;
-      font-size: 1.2rem;
-      letter-spacing: -0.02em;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
       color: var(--white);
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.45rem 1.1rem 0.45rem 0.7rem;
+      border: 1px solid rgba(0,200,150,0.35);
+      border-radius: 10px;
+      background: rgba(0,200,150,0.06);
+      transition: all 0.25s;
+    }
+
+    .nav-logo::before {
+      content: '🌊';
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    .nav-logo:hover {
+      border-color: rgba(0,200,150,0.6);
+      background: rgba(0,200,150,0.1);
+      box-shadow: 0 0 18px rgba(0,200,150,0.15);
     }
 
     .nav-logo span { color: var(--accent); }
